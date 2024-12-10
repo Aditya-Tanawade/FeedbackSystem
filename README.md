@@ -1,3 +1,6 @@
+Sure! Here's the complete README file that you can copy and paste directly into your GitHub repository.
+
+```markdown
 # Feedback and Review System
 
 This is a simple feedback and review system that allows users to submit ratings and comments. Admins can approve, delete, or manage reviews, and the system displays average ratings for each product or service.
@@ -26,6 +29,17 @@ This is a simple feedback and review system that allows users to submit ratings 
 
 ## Project Structure
 
+```
+.
+├── backend/
+│   ├── src/
+│   ├── pom.xml              # Spring Boot dependencies
+│   └── application.properties  # Configuration files
+└── frontend/
+    ├── src/
+    ├── package.json         # React dependencies
+    └── public/
+```
 
 ## Requirements
 
@@ -38,6 +52,104 @@ This is a simple feedback and review system that allows users to submit ratings 
 
 ### Backend (Spring Boot)
 
-1. Clone the repository:
+1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Aditya-Tanawade/FeedbackSystem.git
+   git clone https://github.com/your-username/feedback-review-system.git
+   ```
+
+2. **Navigate to the backend directory** (make sure you're inside the project folder):
+   ```bash
+   cd feedback-review-system/backend
+   ```
+
+3. **Build the backend**:
+   Make sure you have Maven installed. You can build the project using the following command:
+   ```bash
+   ./mvnw clean install
+   ```
+   This will install all the required dependencies for the backend.
+
+4. **Run the Spring Boot application**:
+   After building the project, you can run the Spring Boot application with:
+   ```bash
+   ./mvnw spring-boot:run
+   ```
+   The Spring Boot API will be running on `http://localhost:8080`.
+
+### Frontend (React)
+
+1. **Navigate to the frontend directory**:
+   ```bash
+   cd feedback-review-system/frontend
+   ```
+
+2. **Install dependencies**:
+   First, install all the required dependencies for React:
+   ```bash
+   npm install
+   ```
+
+3. **Start the React development server**:
+   Run the React application:
+   ```bash
+   npm start
+   ```
+   The React application will be running on `http://localhost:3000`.
+
+## API Endpoints
+
+### User Endpoints:
+- **GET** `/api/reviews`: Get all reviews.
+- **POST** `/api/reviews`: Submit a new review (rating, comment).
+
+### Admin Endpoints:
+- **GET** `/api/admin/reviews`: Get all reviews (including pending approval).
+- **PUT** `/api/admin/reviews/{id}/approve`: Approve a review.
+- **DELETE** `/api/admin/reviews/{id}`: Delete a review.
+
+## Database Schema
+
+### Review Table
+
+| Column      | Type          | Description                             |
+|-------------|---------------|-----------------------------------------|
+| `id`        | Long          | Unique ID for the review               |
+| `rating`    | Integer       | Rating (1-5)                           |
+| `comment`   | String        | User's review comment                  |
+| `status`    | String        | Review status (approved, pending)      |
+| `createdAt` | LocalDateTime | Timestamp when the review was created  |
+
+## Admin Panel
+
+Admins can access the admin panel through a protected route and manage reviews. Features include:
+- Review approval.
+- Review deletion.
+- Viewing ratings and comments.
+
+## Running the Application
+
+1. **Backend**: Make sure your Spring Boot application is running on port `8080`.
+2. **Frontend**: The React application will be available at `http://localhost:3000`.
+
+### Notes:
+- You can configure different database options by editing `application.properties` in the Spring Boot backend.
+- Make sure to adjust any CORS or security configurations as needed for communication between the frontend and backend.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
+
+### Steps to Add the File to Your GitHub Repository:
+
+1. **Create or Update Your Repository**: Go to your GitHub repository where you want to add the `README.md` file.
+
+2. **Add the README**:
+   - If you're creating a new repository, GitHub will prompt you to create a README. Simply copy and paste the above content into the new file.
+   - If you're updating an existing repository, go to your repository and click on the `README.md` file. Then, click on the pencil icon to edit it. Replace the existing content with the new README file content.
+
+3. **Commit the Changes**: After pasting the content into the file, scroll down to the "Commit changes" section and add a commit message. Click the "Commit changes" button to save it.
+
+---
+
+This will structure your README with clear sections, API endpoint documentation, and step-by-step instructions for running both the backend and frontend. Let me know if you need further adjustments!
