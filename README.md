@@ -1,6 +1,4 @@
-Sure! Here's the complete README file that you can copy and paste directly into your GitHub repository.
 
-```markdown
 # Feedback and Review System
 
 This is a simple feedback and review system that allows users to submit ratings and comments. Admins can approve, delete, or manage reviews, and the system displays average ratings for each product or service.
@@ -134,19 +132,6 @@ Admins can access the admin panel through a protected route and manage reviews. 
 ### Notes:
 - You can configure different database options by editing `application.properties` in the Spring Boot backend.
 - Make sure to adjust any CORS or security configurations as needed for communication between the frontend and backend.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-### Steps to Add the File to Your GitHub Repository:
-
-1. **Create or Update Your Repository**: Go to your GitHub repository where you want to add the `README.md` file.
-
-2. **Add the README**:
-   - If you're creating a new repository, GitHub will prompt you to create a README. Simply copy and paste the above content into the new file.
-   - If you're updating an existing repository, go to your repository and click on the `README.md` file. Then, click on the pencil icon to edit it. Replace the existing content with the new README file content.
 
 3. **Commit the Changes**: After pasting the content into the file, scroll down to the "Commit changes" section and add a commit message. Click the "Commit changes" button to save it.
 
