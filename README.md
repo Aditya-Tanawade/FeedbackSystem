@@ -40,4 +40,4 @@ This is a simple feedback and review system that allows users to submit ratings 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/feedback-review-system.git
+   git clone https://github.com/Aditya-Tanawade/FeedbackSystem.git
